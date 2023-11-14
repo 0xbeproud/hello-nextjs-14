@@ -20,6 +20,17 @@ const About = () =>{
         scrollbar={{draggable: true}}
         onSlideChange={(swiper: any) => console.log(swiper)}
         onSwiper={(swiper: any) => swiper.mousewheel.enable()}
+        breakpoints={{
+            // when window width is >= 640px
+            640: {
+                width: 640,
+                slidesPerView: 1,
+            },
+            1024: {
+                width: 1024,
+                slidesPerView: 1,
+            },
+        }}
     >
         <StyledSwiperSlide>
             <BeProud/>

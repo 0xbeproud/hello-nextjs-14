@@ -1,11 +1,10 @@
 import styled, {css} from "styled-components";
 
-export const Title = styled.div.attrs(props => ({
-    className: "text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl"
-}))`
+export const StyledTitle = styled.h1`
   color: white;
   font-size: 140px;
   font-weight: bold;
+  padding: 20px 20px;
 `;
 
 export const Summary = styled.h1`
@@ -19,11 +18,3 @@ export const BigTitle = styled.h1`
   font-size: 140px;
   font-weight: bold;
 `;
-
-export const MainTitle = ({text}: {text: string}) => {
-    return (
-        <div className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl">
-            {text}
-        </div>
-    )
-}
