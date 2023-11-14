@@ -2,9 +2,10 @@ import styled, { css } from "styled-components";
 import { Swiper, SwiperSlide } from "swiper/react";
 import {StaticImageData} from "next/image";
 
-
-export const Wrapper = styled.div`
-`
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/scrollbar';
+import 'swiper/css/pagination';
 
 export const StyledSwiperPage = styled(Swiper)`
     width: 100%;
