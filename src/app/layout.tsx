@@ -1,7 +1,6 @@
 import { Inter } from 'next/font/google'
 import './globals.css'
 import React from 'react'
-import Script from 'next/script'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -13,7 +12,6 @@ export default function RootLayout({
   // 모든 페이지에 공유되는 루트 레이아웃은 반드시 html, body 태그가 있어야 함
   return (
     <html lang="en">
-      <Script src="/scripts/web2app.js" defer strategy="lazyOnload" />
       <head>
         <title>Be:theProud</title>
         <meta charSet="utf-8" />
