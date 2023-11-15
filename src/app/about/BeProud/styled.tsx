@@ -1,4 +1,4 @@
-import styled  from "styled-components";
+import styled from "styled-components"
 
 export const Wrapper = styled.div`
   display: flex;
@@ -9,13 +9,13 @@ export const Wrapper = styled.div`
   padding: 20px 20px;
 `
 
-export const Content = styled . div`
+export const Content = styled.div`
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: start; 
+  justify-content: start;
   align-content: start;
-  
+
   width: 100%;
   height: 100vh;
   padding: 20px 20px;
@@ -23,17 +23,16 @@ export const Content = styled . div`
 export const Title = styled.h1`
   color: white;
   font-weight: bold;
-`;
+`
 
 export const Summary = styled.h1`
   color: white;
-`;
-
+`
 
 export const MenuBar = styled.div`
   display: flex;
   flex-direction: row;
-  
+
   width: 100%;
   height: 200px;
   padding: 20px 20px;
@@ -43,4 +42,4 @@ export const Menu = styled.div`
   background: black;
   color: white;
   padding: 3px 3px;
-`;
+`

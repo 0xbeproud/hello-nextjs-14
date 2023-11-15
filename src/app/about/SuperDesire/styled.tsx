@@ -1,4 +1,4 @@
-import styled  from "styled-components";
+import styled from "styled-components"
 
 export const Wrapper = styled.div`
   width: 100%;
@@ -10,10 +10,10 @@ export const Title = styled.h1`
   color: white;
   font-size: 200px;
   font-weight: bold;
-`;
+`
 
 export const Summary = styled.h1`
   color: white;
   font-size: 30px;
   font-weight: bold;
-`;
+`

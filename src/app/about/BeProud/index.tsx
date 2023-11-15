@@ -1,25 +1,33 @@
-import React from "react";
-import {Content, MenuBar, Menu, Summary, Title, Wrapper} from "./styled";
-import {SlideContainer} from "../styled";
-import BeProudImage from "@images/about/pfp7946.png";
+import React from "react"
+import Web2AppButton from "@/components/Web2AppButton"
+import BeProudImage from "@images/about/pfp7946.png"
+import Row from "@styles/styeld"
+import { Content, MenuBar, Menu, Summary, Title, Wrapper } from "./styled"
+import { SlideContainer } from "../styled"
 
-const BeProudSlide = () => {
-    return <SlideContainer bgImage={BeProudImage}>
-        <Wrapper>
-            <MenuBar>
-                <Menu className="flex-none">home</Menu>
-                <Menu className="flex-none ml-auto">menu2</Menu>
-                <Menu className="flex-none ml-2">menu3</Menu>
-            </MenuBar>
-            <Content>
-                <Title className="text-4xl md:text-6xl lg:text-8xl">Be:Proud</Title>
-                <Summary className="text-base md:text-2xl lg:text-3xl">
-                    Self-esteem is the belief that you are a valuable person worthy of love and capable of accomplishing
-                    something.
-                </Summary>
-            </Content>
-        </Wrapper>
+function BeProudSlide() {
+  return (
+    <SlideContainer image={BeProudImage}>
+      <Wrapper>
+        <MenuBar>
+          <Menu className="flex-none">home</Menu>
+          <Menu className="flex-none ml-auto">menu2</Menu>
+          <Menu className="flex-none ml-2">menu3</Menu>
+        </MenuBar>
+        <Content>
+          <Title className="text-4xl md:text-6xl lg:text-8xl">Be:Proud</Title>
+          <Summary className="flex-1 text-base md:text-2xl lg:text-3xl">
+            Self-esteem is the belief that you are a valuable person worthy of
+            love and capable of accomplishing something.
+          </Summary>
+          <Row className=" ml-auto gap-1">
+            <Web2AppButton key="1" />
+            <Web2AppButton key="2" />
+          </Row>
+        </Content>
+      </Wrapper>
     </SlideContainer>
+  )
 }
 
-export default BeProudSlide;
+export default BeProudSlide
