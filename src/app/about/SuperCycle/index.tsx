@@ -1,7 +1,7 @@
-import React from "react"
-import { SlideContainer } from "@/app/about/styled"
-import SuperCycleImage from "@images/about/super-cycle.jpg"
-import { Summary, Title, Wrapper } from "./styled"
+import React from 'react'
+import { SlideContainer } from '@/app/about/styled'
+import SuperCycleImage from '@images/about/super-cycle.jpg'
+import { Summary, Title, Wrapper } from './styled'
 
 function SuperCycleSlide() {
   return (

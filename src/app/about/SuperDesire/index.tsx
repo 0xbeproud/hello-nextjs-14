@@ -1,7 +1,7 @@
-import React from "react"
-import { SlideContainer } from "@/app/about/styled"
-import SuperDesireImage from "@images/about/super-desire.jpg"
-import { Summary, Title, Wrapper } from "./styled"
+import React from 'react'
+import { SlideContainer } from '@/app/about/styled'
+import SuperDesireImage from '@images/about/super-desire.jpg'
+import { Summary, Title, Wrapper } from './styled'
 
 function SuperDesireSlide() {
   return (
@@ -13,7 +13,7 @@ function SuperDesireSlide() {
           It is a state of mind familiar to everyone who has ever wanted to
           drink water <br />
           or desired to know what has happened to an old friend, <br />
-          but its familiarity does not make it easy to give a theory of desire.{" "}
+          but its familiarity does not make it easy to give a theory of desire.{' '}
           <br />
         </Summary>
       </Wrapper>

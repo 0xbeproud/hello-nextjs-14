@@ -1,9 +1,9 @@
-import React from "react"
-import Web2AppButton from "@/components/Web2AppButton"
-import BeProudImage from "@images/about/pfp7946.png"
-import Row from "@styles/styeld"
-import { Content, MenuBar, Menu, Summary, Title, Wrapper } from "./styled"
-import { SlideContainer } from "../styled"
+import React from 'react'
+import DeepLinkBlock from '@components/DeepLinkBlock'
+import BeProudImage from '@images/about/pfp7946.png'
+import Row from '@styles/styeld'
+import { Content, MenuBar, Menu, Summary, Title, Wrapper } from './styled'
+import { SlideContainer } from '../styled'
 
 function BeProudSlide() {
   return (
@@ -21,8 +21,8 @@ function BeProudSlide() {
             love and capable of accomplishing something.
           </Summary>
           <Row className=" ml-auto gap-1">
-            <Web2AppButton key="1" />
-            <Web2AppButton key="2" />
+            <DeepLinkBlock key="1" />
+            <DeepLinkBlock key="2" />
           </Row>
         </Content>
       </Wrapper>
