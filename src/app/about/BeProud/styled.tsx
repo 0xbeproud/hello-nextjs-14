@@ -1,16 +1,5 @@
 import styled  from "styled-components";
 
-export const Content = styled . div`
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: start; 
-  align-content: end;
-  
-  width: 100%;
-  height: 100vh;
-  padding: 20px 20px;
-`
 export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
@@ -20,6 +9,17 @@ export const Wrapper = styled.div`
   padding: 20px 20px;
 `
 
+export const Content = styled . div`
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: start; 
+  align-content: start;
+  
+  width: 100%;
+  height: 100vh;
+  padding: 20px 20px;
+`
 export const Title = styled.h1`
   color: white;
   font-weight: bold;
@@ -35,7 +35,7 @@ export const MenuBar = styled.div`
   flex-direction: row;
   
   width: 100%;
-  height: 100vh;
+  height: 200px;
   padding: 20px 20px;
   background: white;
 `
