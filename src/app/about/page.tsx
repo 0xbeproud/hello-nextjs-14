@@ -3,21 +3,20 @@
 import React from "react";
 
 import {StyledSwiperPage, StyledSwiperSlide} from "./styled";
-import BeProud from "@/app/about/BeProud";
-import SuperHaii from "@/app/about/SuperHaii";
-import SuperCycle from "@/app/about/SuperCycle";
-import SuperDesire from "@/app/about/SuperDesire";
+import BeProudSlide from "@/app/about/BeProud";
+import SuperHaiiSlide from "@/app/about/SuperHaii";
+import SuperCycleSlide from "@/app/about/SuperCycle";
+import SuperDesireSlide from "@/app/about/SuperDesire";
 import {Autoplay, Mousewheel, Navigation, Pagination, Scrollbar} from "swiper/modules";
 
 
 const About = () => {
     return (
-        <div className="swiper-container">
             <StyledSwiperPage
                 // modules={[Navigation, Pagination, Scrollbar, Mousewheel, Autoplay]}
                 modules={[Pagination, Mousewheel]}
                 direction={"vertical"}
-                speed={500}
+                speed={700}
                 spaceBetween={10}
                 slidesPerView={1}
                 // navigation={{
@@ -51,19 +50,18 @@ const About = () => {
                 // }}
             >
                 <StyledSwiperSlide>
-                    <BeProud/>
+                    <BeProudSlide/>
                 </StyledSwiperSlide>
                 <StyledSwiperSlide>
-                    <SuperHaii/>
+                    <SuperHaiiSlide/>
                 </StyledSwiperSlide>
                 <StyledSwiperSlide>
-                    <SuperCycle/>
+                    <SuperCycleSlide/>
                 </StyledSwiperSlide>
                 <StyledSwiperSlide>
-                    <SuperDesire/>
+                    <SuperDesireSlide/>
                 </StyledSwiperSlide>
             </StyledSwiperPage>
-        </div>
     )
 }
 

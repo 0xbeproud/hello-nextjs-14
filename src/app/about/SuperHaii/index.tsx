@@ -3,8 +3,8 @@ import React from "react";
 import {Summary, Title, Wrapper} from "./styled";
 import HaiiImage from "@images/about/haai.jpg";
 
-const SuperHaii = () => {
-    return <SlideContainer image={HaiiImage}>
+const SuperHaiiSlide = () => {
+    return <SlideContainer bgImage={HaiiImage}>
         <Wrapper className="flex flex-row flex-wrap justify-start">
             <Title>Super:Haii</Title>
             <Summary>
@@ -16,4 +16,4 @@ const SuperHaii = () => {
     </SlideContainer>
 }
 
-export default SuperHaii;
+export default SuperHaiiSlide;

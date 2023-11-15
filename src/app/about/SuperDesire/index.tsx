@@ -3,8 +3,8 @@ import React from "react";
 import {Summary, Title, Wrapper} from "./styled";
 import SuperDesireImage from "@images/about/super-desire.jpg";
 
-const SuperDesire = () => {
-    return <SlideContainer image={SuperDesireImage}>
+const SuperDesireSlide = () => {
+    return <SlideContainer bgImage={SuperDesireImage}>
         <Wrapper className="flex flex-row flex-wrap justify-start">
             <Title>Super:Desire</Title>
             <Summary>
@@ -17,4 +17,4 @@ const SuperDesire = () => {
     </SlideContainer>
 }
 
-export default SuperDesire;
+export default SuperDesireSlide;

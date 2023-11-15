@@ -15,7 +15,7 @@ export const StyledSwiperSlide = styled(SwiperSlide)`
   //height: 100vh;
 `
 
-export const SlideContainer = styled.div<{ image?: StaticImageData }>`
-  ${(props) => props.image ? css`background-image: url(${props.image.src}); background-size: cover; background-repeat: no-repeat` : undefined});
+export const SlideContainer = styled.div<{ bgImage?: StaticImageData }>`
+  ${(props) => props.bgImage ? css`background-image: url(${props.bgImage.src}); background-size: cover; background-repeat: no-repeat` : undefined});
 `
 

@@ -3,8 +3,8 @@ import React from "react";
 import {Summary, Title, Wrapper} from "./styled";
 import SuperCycleImage from "@images/about/super-cycle.jpg";
 
-const SuperCycle = () => {
-    return <SlideContainer image={SuperCycleImage}>
+const SuperCycleSlide = () => {
+    return <SlideContainer bgImage={SuperCycleImage}>
         <Wrapper className="flex flex-row flex-wrap justify-start">
             <Title className="text-5xl sm:text-6xl md:text-8xl lg:text-9xl">Super:Cycle</Title>
             <Summary>
@@ -16,4 +16,4 @@ const SuperCycle = () => {
     </SlideContainer>
 }
 
-export default SuperCycle;
+export default SuperCycleSlide;
