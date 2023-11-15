@@ -1,20 +1,20 @@
 import React from 'react'
 
 type Props = {
-  space: number
+  size: number
 }
 
-function Space(props: Props) {
-  const { space } = props
+function Index(props: Props) {
+  const { size } = props
   const style = React.useMemo<React.CSSProperties>(
     () => ({
-      height: `${space}px`,
+      height: `${size}px`,
       flexShrink: 0,
     }),
-    [space],
+    [size],
   )
 
   return <div style={style} />
 }
 
-export default Space
+export default Index

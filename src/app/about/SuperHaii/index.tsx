@@ -1,6 +1,6 @@
 import React from 'react'
 import HaiiImage from '@images/about/haai.jpg'
-import Space from '@components/Space'
+import Index from '@components/Space'
 import { Content, Summary, Title, Wrapper } from './styled'
 import { SlideContainer } from '../styled'
 
@@ -10,7 +10,7 @@ function SuperHaiiSlide() {
       <Wrapper>
         <Content>
           <Title className="text-4xl md:text-6xl lg:text-8xl">Super:Haai</Title>
-          <Space space={10} />
+          <Index size={10} />
           <Summary className="text-base md:text-2xl lg:text-3xl">
             Artificial intelligence (AI) is a fundamental form of intelligence
             that mimics human intelligence <br />
