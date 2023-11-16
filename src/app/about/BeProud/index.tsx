@@ -3,37 +3,45 @@
 import React from 'react';
 import BeProudImage from '@images/about/pfp7946.png';
 import Row from '@styles/styeld';
-import Space from '@components/Space';
+import Gutter from '@components/Space';
 import Portal from '@components/Portal';
 import useModal from '@hooks/useModal';
 import Alert from '@components/Alert';
 import AndroidDeepLink from '@/components/DeepLink/android';
 import IosDeepLink from '@/components/DeepLink/Ios';
-import { Content, Menu, MenuBar, Summary, Title, Wrapper } from './styled';
-import { SlideContainer } from '../styled';
+import { Menu, MenuBar, MenuItem } from './styled';
+import {
+  Content,
+  Description,
+  SlideContainer,
+  Title,
+  Wrapper,
+} from '../styled';
 
 function BeProudSlide() {
   const { isOpen, open, close } = useModal();
 
   return (
-    <SlideContainer image={BeProudImage}>
-      <Wrapper className="flex flex-col flex-wrap">
-        <MenuBar className="flex flex-row">
-          <Menu className="flex-none">HOME</Menu>
-          <Menu className="flex-none ml-auto">MENU2</Menu>
-          <Menu className="flex-none ml-2">MENU3</Menu>
+    <SlideContainer $image={BeProudImage}>
+      <Wrapper>
+        <MenuBar>
+          <Menu>
+            <MenuItem>HOME</MenuItem>
+            <MenuItem className="ml-auto">MENU2</MenuItem>
+            <MenuItem className="ml-2">MENU3</MenuItem>
+          </Menu>
         </MenuBar>
-        <Space size={100} />
-        <Content className="flex flex-col flex-wrap">
+        <Gutter size={20} />
+        <Content>
           <Title className="text-4xl md:text-6xl lg:text-8xl">Be:Proud</Title>
-          <Space size={20} />
-          <Summary className="flex-1 text-base md:text-xl lg:text-2xl">
+          <Gutter size={10} />
+          <Description className="text-base md:text-xl lg:text-2xl">
             Self-esteem is the belief that you are a valuable person worthy of
             love and capable of accomplishing something.
-          </Summary>
+          </Description>
         </Content>
-
-        <Row className="flex-1 justify-end gap-2">
+        <Gutter size={20} />
+        <Row>
           <div onClick={open}>Modal Open</div>
           {isOpen && (
             <Portal>
