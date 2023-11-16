@@ -1,11 +1,25 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    reactStrictMode: true,
-    trailingSlash: true,
-    compiler: {
-        styledComponents: true,
+  swcMinify: true,
+  compiler: {
+    // ssr, displayName true가 기본값으로 켜진다.
+    styledComponents: true,
+    removeConsole: {
+      exclude: ['error'],
     },
-    swcMinify: true,
-}
+  },
+  reactStrictMode: true,
+  trailingSlash: true,
+  // experimental: {
+  //   modularizeImports: {
+  //     antd: {
+  //       transform: 'antd/lib/{{member}}',
+  //     },
+  //     lodash: {
+  //       transform: 'lodash/{{member}}',
+  //     },
+  //   },
+  // },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
