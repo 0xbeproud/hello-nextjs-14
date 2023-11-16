@@ -4,5 +4,20 @@
   "useTabs": false,
   "tabWidth": 2,
   "trailingComma": "all",
-  "printWidth": 80
+  "printWidth": 80,
+  "bracketSpacing": true,
+  "arrowParens": "avoid",
+  "endOfLine": "auto",
+  "importOrder": [
+    "^@layouts/(.*)$",
+    "^@api/(.*)$",
+    "^@types/(.*)$",
+    "^@utils/(.*)$",
+    "^@hooks/(.*)$",
+    "^@components/(.*)$",
+    "^@styles/(.*)$",
+    "^[./]"
+  ],
+  "importOrderSeparation": true,
+  "importOrderSortSpecifiers": true
 }
