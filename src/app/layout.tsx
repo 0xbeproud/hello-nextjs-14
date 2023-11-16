@@ -26,8 +26,10 @@ export default function RootLayout({
           data-react-helmet="true"
         />
       </head>
-      <body className={inter.className}>{children}</body>
-      <div id="portal" />
+      <body className={inter.className}>
+        <div id="portal" />
+        {children}
+      </body>
     </html>
   );
 }

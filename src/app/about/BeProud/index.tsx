@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import BeProudImage from '@images/about/pfp7946.png';
 import Row from '@styles/styeld';

@@ -22,6 +22,12 @@ export const SlideContainer = styled.div<{ image?: StaticImageData }>`
           background-image: url(${props.image.src});
           background-size: cover;
           background-repeat: no-repeat;
+          background-position: center;
         `
       : undefined});
+`;
+
+export const Wrapper = styled.div`
+  .swiper-pagination-bullet { width: 12px; height: 12px; background: transparent; border: 1px solid pink; opacity: 1; }
+  .swiper-pagination-bullet-active { width: 40px; transition: width .5s; border-radius: 5px; background: pink; border: 1px solid transparent;
 `;

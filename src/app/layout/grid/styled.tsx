@@ -1,4 +1,7 @@
+'use client';
+
 import styled from 'styled-components';
+import './styled.css';
 
 export const GridLayout = styled.div`
   display: grid;
