@@ -1,10 +1,10 @@
-import React from 'react'
-import BeProudImage from '@images/about/pfp7946.png'
-import Row from '@styles/styeld'
-import { Content, MenuBar, Menu, Summary, Title, Wrapper } from './styled'
-import { SlideContainer } from '../styled'
-import Space from "@components/Space";
-import DeepLink from "@components/DeepLink";
+import React from 'react';
+import BeProudImage from '@images/about/pfp7946.png';
+import Row from '@styles/styeld';
+import Space from '@components/Space';
+import DeepLink from '@components/DeepLink';
+import { Content, Menu, MenuBar, Summary, Title, Wrapper } from './styled';
+import { SlideContainer } from '../styled';
 
 function BeProudSlide() {
   return (
@@ -30,7 +30,7 @@ function BeProudSlide() {
         </Row>
       </Wrapper>
     </SlideContainer>
-  )
+  );
 }
 
-export default BeProudSlide
+export default BeProudSlide;

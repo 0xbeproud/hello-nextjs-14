@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "prepare": "husky install",
-    "fix": "npx prettier --write src"
+    "pix": "npx prettier --write src"
   },
   "dependencies": {
     "next": "14.0.2",

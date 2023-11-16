@@ -1,8 +1,8 @@
-import React from 'react'
-import HaiiImage from '@images/about/haai.jpg'
-import Index from '@components/Space'
-import { Content, Summary, Title, Wrapper } from './styled'
-import { SlideContainer } from '../styled'
+import React from 'react';
+import HaiiImage from '@images/about/haai.jpg';
+import Index from '@components/Space';
+import { Content, Summary, Title, Wrapper } from './styled';
+import { SlideContainer } from '../styled';
 
 function SuperHaiiSlide() {
   return (
@@ -22,7 +22,7 @@ function SuperHaiiSlide() {
         </Content>
       </Wrapper>
     </SlideContainer>
-  )
+  );
 }
 
-export default SuperHaiiSlide
+export default SuperHaiiSlide;

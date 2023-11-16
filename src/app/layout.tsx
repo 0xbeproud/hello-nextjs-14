@@ -1,13 +1,13 @@
-import { Inter } from 'next/font/google'
-import './globals.css'
-import React from 'react'
+import { Inter } from 'next/font/google';
+import './globals.css';
+import React from 'react';
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'] });
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   // 모든 페이지에 공유되는 루트 레이아웃은 반드시 html, body 태그가 있어야 함
   return (
@@ -28,5 +28,5 @@ export default function RootLayout({
       </head>
       <body className={inter.className}>{children}</body>
     </html>
-  )
+  );
 }
