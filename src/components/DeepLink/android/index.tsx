@@ -1,24 +1,12 @@
 import React from 'react';
-
-import styled from 'styled-components';
 import Script from 'next/script';
+import { Button } from '../styled';
 
-const Button = styled.button`
-  font-weight: bold;
-  background: transparent;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-width: 100px;
-  border: 1px solid white;
-  border-radius: 10px;
-  padding: 20px 20px;
-`;
 type Props = {
   name: string;
 };
 
-function DeepLink(props: Props) {
+function AndroidDeepLink(props: Props) {
   const { name } = props;
   return (
     <>
@@ -39,10 +27,12 @@ function DeepLink(props: Props) {
               console.log('willInvokeApp');
             }, // function for logging
             onAppMissing() {
-              console.log('onAppMissing');
+              window.open(
+                'https://play.google.com/store/search?q=kakaotalk&c=apps&hl=en-KR',
+              );
             }, // fallback function (default. move to appstore)
             onUnsupportedEnvironment() {
-              console.log('onUnsupportedEnvironment');
+              window.open('https://google.com');
             },
           });
         }}
@@ -53,4 +43,4 @@ function DeepLink(props: Props) {
   );
 }
 
-export default DeepLink;
+export default AndroidDeepLink;

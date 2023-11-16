@@ -8,24 +8,26 @@ import SuperCycleSlide from '@/app/about/SuperCycle';
 import SuperDesireSlide from '@/app/about/SuperDesire';
 import { Mousewheel, Pagination } from 'swiper/modules';
 
+import useDetect from '@hooks/useDetect';
 import { StyledSwiperPage, StyledSwiperSlide } from './styled';
 
 function About() {
-  const userAgent =
-    typeof navigator === 'undefined' ? 'SSR' : navigator.userAgent;
-  const isAndroid = Boolean(userAgent.match(/Android/i));
-  const isIOS = Boolean(userAgent.match(/iPhone|iPad|iPod/i));
-  const isOpera = Boolean(userAgent.match(/Opera Mini/i));
-  const isWindows = Boolean(userAgent.match(/IEMobile/i));
-  const isSSR = Boolean(userAgent.match(/SSR/i));
-  const isMobile = Boolean(isAndroid || isIOS || isOpera || isWindows);
-  const isDesktop = Boolean(!isMobile && !isSSR);
+  const {
+    userAgent: userAgentString,
+    isIOS,
+    isAndroid,
+    isOpera,
+    isSSR,
+    isWindows,
+    isMobile,
+    isDesktop,
+  } = useDetect();
 
   return (
     <>
       {isDesktop ? (
         <div className="bg-emerald-400 text-sm">
-          userAgent: {userAgent} <br />
+          userAgent: {userAgentString} <br />
           isAndroid: {isAndroid.toString()}
           <br />
           isIOS: {isIOS.toString()}

@@ -2,19 +2,16 @@ import React from 'react';
 import BeProudImage from '@images/about/pfp7946.png';
 import Row from '@styles/styeld';
 import Space from '@components/Space';
-import DeepLink from '@components/DeepLink';
-import Confirm from '@components/Confirm';
 import Portal from '@components/Portal';
 import useModal from '@hooks/useModal';
+import Alert from '@components/Alert';
+import AndroidDeepLink from '@/components/DeepLink/android';
+import IosDeepLink from '@/components/DeepLink/Ios';
 import { Content, Menu, MenuBar, Summary, Title, Wrapper } from './styled';
 import { SlideContainer } from '../styled';
 
 function BeProudSlide() {
   const { isOpen, open, close } = useModal();
-  const confirm = () => {
-    console.log('confirm clicked');
-    close();
-  };
 
   return (
     <SlideContainer image={BeProudImage}>
@@ -33,20 +30,21 @@ function BeProudSlide() {
             love and capable of accomplishing something.
           </Summary>
         </Content>
-        <div onClick={open}>Open</div>
-        {isOpen && (
-          <Portal>
-            <Confirm
-              title="Alart"
-              message="Want install"
-              close={close}
-              confirm={confirm}
-            />
-          </Portal>
-        )}
+
         <Row className="flex-1 justify-end gap-2">
-          <DeepLink name="Android" />
-          <DeepLink name="IOS" />
+          <div onClick={open}>Modal Open</div>
+          {isOpen && (
+            <Portal>
+              <Alert
+                title="Alart"
+                message="Want install"
+                close={close}
+                btnText="error"
+              />
+            </Portal>
+          )}
+          <IosDeepLink name="IOS" />
+          <AndroidDeepLink name="Android" />
         </Row>
       </Wrapper>
     </SlideContainer>

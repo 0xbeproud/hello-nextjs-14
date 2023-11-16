@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { createPortal } from 'react-dom';
 
 type Props = {
@@ -7,8 +7,14 @@ type Props = {
 
 function Portal(props: Props) {
   const { children } = props;
-  const node = document.getElementById('portal') as HTMLElement;
-  return createPortal(children, node);
+  const [element, setElement] = React.useState<HTMLElement | null>(null);
+  useEffect(() => {
+    setElement(document.getElementById('portal'));
+  }, []);
+
+  if (!element) return null;
+
+  return createPortal(children, element);
 }
 
 export default Portal;
