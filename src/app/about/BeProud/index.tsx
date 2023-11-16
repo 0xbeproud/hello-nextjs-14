@@ -3,10 +3,19 @@ import BeProudImage from '@images/about/pfp7946.png';
 import Row from '@styles/styeld';
 import Space from '@components/Space';
 import DeepLink from '@components/DeepLink';
+import Confirm from '@components/Confirm';
+import Portal from '@components/Portal';
+import useModal from '@hooks/useModal';
 import { Content, Menu, MenuBar, Summary, Title, Wrapper } from './styled';
 import { SlideContainer } from '../styled';
 
 function BeProudSlide() {
+  const { isOpen, open, close } = useModal();
+  const confirm = () => {
+    console.log('confirm clicked');
+    close();
+  };
+
   return (
     <SlideContainer image={BeProudImage}>
       <Wrapper className="flex flex-col flex-wrap">
@@ -24,6 +33,17 @@ function BeProudSlide() {
             love and capable of accomplishing something.
           </Summary>
         </Content>
+        <div onClick={open}>Open</div>
+        {isOpen && (
+          <Portal>
+            <Confirm
+              title="Alart"
+              message="Want install"
+              close={close}
+              confirm={confirm}
+            />
+          </Portal>
+        )}
         <Row className="flex-1 justify-end gap-2">
           <DeepLink name="Android" />
           <DeepLink name="IOS" />
