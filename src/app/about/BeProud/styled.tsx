@@ -1,11 +1,12 @@
 'use client';
 
-import styled from 'styled-components';
+import tw, { styled } from 'twin.macro';
 
 export const Wrapper = styled.div`
   //display: flex;
   //flex-direction: column;
   //flex-wrap: wrap;
+  ${tw`flex flex-col flex-wrap`}
 
   width: 100%;
   height: 100vh;

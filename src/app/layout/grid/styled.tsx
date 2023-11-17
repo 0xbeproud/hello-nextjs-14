@@ -1,7 +1,7 @@
 'use client';
 
-import styled from 'styled-components';
 import './styled.css';
+import { styled } from 'twin.macro';
 
 export const GridLayout = styled.div`
   display: grid;

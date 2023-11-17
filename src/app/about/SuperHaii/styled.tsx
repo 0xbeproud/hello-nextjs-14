@@ -1,6 +1,6 @@
 'use client';
 
-import styled from 'styled-components';
+import { styled } from 'twin.macro';
 
 export const Wrapper = styled.div`
   display: flex;

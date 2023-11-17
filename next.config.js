@@ -1,5 +1,7 @@
+const withTwin = require('./withTwin.js');
+
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+const nextConfig = withTwin({
   swcMinify: true,
   compiler: {
     // ssr, displayName true가 기본값으로 켜진다.
@@ -20,6 +22,6 @@ const nextConfig = {
   //     },
   //   },
   // },
-};
+});
 
 module.exports = nextConfig;

@@ -1,6 +1,9 @@
+'use client';
+
 import { Inter } from 'next/font/google';
 import './globals.css';
 import React from 'react';
+import StyledComponentsRegistry from '@/styles/StyledComponentsRegistry';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -27,8 +30,10 @@ export default function RootLayout({
         />
       </head>
       <body className={inter.className}>
-        <div id="portal" />
-        {children}
+        <StyledComponentsRegistry>
+          <div id="portal" />
+          {children}
+        </StyledComponentsRegistry>
       </body>
     </html>
   );
