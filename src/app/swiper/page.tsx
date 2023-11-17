@@ -2,15 +2,15 @@
 
 import React from 'react';
 
-import SuperHaiiSlide from '@/app/about/SuperHaii';
-import SuperCycleSlide from '@/app/about/SuperCycle';
-import SuperDesireSlide from '@/app/about/SuperDesire';
 import { Mousewheel, Pagination } from 'swiper/modules';
 
 import useDetect from '@hooks/useDetect';
 import Script from 'next/script';
-import BeProudSlide from '@/app/about/BeProud';
 import { StyledSwiperPage, StyledSwiperSlide, Wrapper } from './styled';
+import BeProudSlide from './BeProud';
+import SuperCycleSlide from './SuperCycle';
+import SuperDesireSlide from './SuperDesire';
+import SuperHaiiSlide from './SuperHaii';
 
 function About() {
   const {

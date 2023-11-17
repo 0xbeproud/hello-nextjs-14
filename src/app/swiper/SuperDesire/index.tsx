@@ -1,7 +1,7 @@
 import React from 'react';
-import { SlideContainer } from '@/app/about/styled';
 import SuperDesireImage from '@images/about/super-desire.jpg';
 import { Summary, Title, Wrapper } from './styled';
+import { SlideContainer } from '../styled';
 
 function SuperDesireSlide() {
   return (
