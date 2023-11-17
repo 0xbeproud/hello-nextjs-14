@@ -12,7 +12,7 @@ module.exports = {
     node: true,
     es6: true,
   },
-  ignorePatterns: ['node_modules/', 'public/scripts/*'], // eslint 미적용될 폴더나 파일 명시
+  ignorePatterns: ['node_modules/', 'public/scripts/*', '**/*.js'], // eslint 미적용될 폴더나 파일 명시
   extends: [
     'airbnb',
     'airbnb-typescript',

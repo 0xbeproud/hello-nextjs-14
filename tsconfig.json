@@ -53,7 +53,7 @@
     }
   },
   "include": [
-    "src",
+    "./src",
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",

@@ -17,7 +17,7 @@ function BeProudSlide() {
 
   return (
     <SlideContainer image={BeProudImage}>
-      <Wrapper className="flex flex-col flex-wrap">
+      <Wrapper>
         <MenuBar className="flex flex-row">
           <Menu className="flex-none">HOME</Menu>
           <Menu className="flex-none ml-auto">MENU2</Menu>
