@@ -32,12 +32,9 @@ export const NavigationTitle = styled.div`
   font-size: 20px;
 `;
 
-export const VideoSection = styled.div`
-  background: greenyellow;
+export const VideoSection = styled.div``;
 
-  height: 200px;
-  color: black;
-`;
+export const VideoBox = styled.video``;
 
 export const AboutReplaceSection = styled.div`
   ${tw`flex flex-col xl:flex-row flex-wrap gap-6`}

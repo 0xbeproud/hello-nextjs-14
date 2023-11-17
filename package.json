@@ -15,10 +15,11 @@
     "next-themes": "^0.2.1",
     "react": "^18",
     "react-dom": "^18",
+    "react-player": "^2.13.0",
     "styled-components": "^6.1.1",
     "swiper": "^11.0.4",
-    "ua_parser": "^1.2.9",
-    "twin.macro": "^3.4.0"
+    "twin.macro": "^3.4.0",
+    "ua_parser": "^1.2.9"
   },
   "devDependencies": {
     "@babel/core": "^7.23.3",
