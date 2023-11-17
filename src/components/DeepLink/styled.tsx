@@ -1,4 +1,4 @@
-import { styled } from 'twin.macro';
+import styled from 'styled-components';
 
 export const Button = styled.button`
   font-weight: bold;

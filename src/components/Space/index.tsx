@@ -4,7 +4,7 @@ type Props = {
   size: number;
 };
 
-function Gutter(props: Props) {
+function Space(props: Props) {
   const { size } = props;
   const style = React.useMemo<React.CSSProperties>(
     () => ({
@@ -17,4 +17,4 @@ function Gutter(props: Props) {
   return <div style={style} />;
 }
 
-export default Gutter;
+export default Space;

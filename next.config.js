@@ -1,9 +1,8 @@
-const withTwin = require('./withTwin');
-
 /** @type {import('next').NextConfig} */
-const nextConfig = withTwin({
+const nextConfig = {
   swcMinify: true,
   compiler: {
+    // ssr, displayName true가 기본값으로 켜진다.
     styledComponents: true,
     removeConsole: {
       exclude: ['error'],
@@ -21,6 +20,6 @@ const nextConfig = withTwin({
   //     },
   //   },
   // },
-});
+};
 
 module.exports = nextConfig;
