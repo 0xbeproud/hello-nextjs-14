@@ -2,10 +2,10 @@
 
 import React from 'react';
 
-import BeProudSlide from '@/app/swiper/BeProud';
-import SuperHaiiSlide from '@/app/swiper/SuperHaii';
-import SuperCycleSlide from '@/app/swiper/SuperCycle';
-import SuperDesireSlide from '@/app/swiper/SuperDesire';
+import BeProudSlide from '@/app/about/BeProud';
+import SuperHaiiSlide from '@/app/about/SuperHaii';
+import SuperCycleSlide from '@/app/about/SuperCycle';
+import SuperDesireSlide from '@/app/about/SuperDesire';
 import { Mousewheel, Pagination } from 'swiper/modules';
 
 import useDetect from '@hooks/useDetect';
