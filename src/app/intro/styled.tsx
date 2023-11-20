@@ -3,8 +3,6 @@ import { StaticImageData } from 'next/image';
 
 export const Page = styled.div`
   ${tw`flex flex-col items-center`}
-
-  background: lightblue;
 `;
 export const Container = styled.div`
   ${tw`flex flex-col`}
@@ -12,37 +10,41 @@ export const Container = styled.div`
 
   min-width: 640px;
   height: 100vh;
-
-  background: lightgrey;
 `;
 
 export const NavigationBar = styled.div`
   ${tw`flex flex-row justify-center items-center`}
 
   width: 100%;
+  opacity: 0.6;
 
-  height: 50px;
+  height: 80px;
   background: white;
-  border: 1px solid lightcoral;
 `;
 
 export const NavigationTitle = styled.div`
   color: black;
-  font-weight: bold;
-  font-size: 20px;
+  font-weight: 900;
+  font-size: 40px;
 `;
 
 export const VideoSection = styled.div``;
 
-export const VideoBox = styled.video``;
+export const VideoBox = styled.video`
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+`;
 
 export const AboutReplaceSection = styled.div`
   ${tw`flex flex-col xl:flex-row flex-wrap gap-6`}
 `;
 export const AboutReplaceSectionItem = styled.div`
   ${tw`flex-1`}
-
-  color: black;
 `;
 
 export const StyledImage = styled.div<{ image?: StaticImageData }>`
@@ -50,11 +52,11 @@ export const StyledImage = styled.div<{ image?: StaticImageData }>`
     props.image
       ? css`
           background-image: url(${props.image.src});
-          background-size: cover;
+          background-size: contain;
           background-repeat: no-repeat;
           background-position: center;
         `
       : undefined});
 
-  ${tw`h-60 xl:h-96 w-full`}
+  ${tw`h-40 xl:h-80 w-full`}
 `;

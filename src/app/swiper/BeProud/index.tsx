@@ -8,9 +8,9 @@ import useModal from '@hooks/useModal';
 import Alert from '@components/Alert';
 import AndroidDeepLink from '@/components/DeepLink/android';
 import IosDeepLink from '@/components/DeepLink/Ios';
+import Gutter from '@components/Gutter';
 import { Content, Menu, MenuBar, Summary, Title, Wrapper } from './styled';
 import { SlideContainer } from '../styled';
-import Gutter from '@components/Gutter';
 
 function BeProudSlide() {
   const { isOpen, open, close } = useModal();
