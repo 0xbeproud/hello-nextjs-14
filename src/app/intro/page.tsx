@@ -6,7 +6,7 @@ import Gutter from '@/components/Gutter';
 import Hape5984 from '@images/hape/Hape5984.png';
 import Hape7472 from '@images/hape/Hape7472.png';
 import Hape7946 from '@images/hape/Hape7946.png';
-
+import DownloadButtonContainer from '@/app/detect/components/DownloadButton';
 import {
   AboutReplaceSection,
   AboutReplaceSectionItem,
@@ -35,6 +35,7 @@ function Intro() {
         <NavigationTitle>SFORE</NavigationTitle>
       </NavigationBar>
       <Gutter space={24} />
+      <DownloadButtonContainer />
       <Container>
         <Gutter space={24} />
         <AboutReplaceSection>
