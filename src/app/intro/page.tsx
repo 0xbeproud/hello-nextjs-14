@@ -6,7 +6,6 @@ import Gutter from '@/components/Gutter';
 import Hape5984 from '@images/hape/Hape5984.png';
 import Hape7472 from '@images/hape/Hape7472.png';
 import Hape7946 from '@images/hape/Hape7946.png';
-import DownloadButtonContainer from '@/app/detect/components/DownloadButton';
 import {
   AboutReplaceSection,
   AboutReplaceSectionItem,
@@ -18,10 +17,15 @@ import {
   VideoBox,
   VideoSection,
 } from './styled';
+import DownloadButton from './components/DownloadButton/page';
 
 function Intro() {
   return (
     <Page>
+      <NavigationBar>
+        <NavigationTitle>SFORE</NavigationTitle>
+      </NavigationBar>
+      <Gutter space={80} />
       <VideoSection>
         <VideoBox playsInline autoPlay muted loop controls>
           <source
@@ -30,28 +34,23 @@ function Intro() {
           />
           Your browser does not support the video tag.
         </VideoBox>
+        <DownloadButton />
+        <Container>
+          <AboutReplaceSection>
+            <AboutReplaceSectionItem>
+              <StyledImage image={Hape5984} />
+            </AboutReplaceSectionItem>
+
+            <AboutReplaceSectionItem>
+              <StyledImage image={Hape7472} />
+            </AboutReplaceSectionItem>
+
+            <AboutReplaceSectionItem>
+              <StyledImage image={Hape7946} />
+            </AboutReplaceSectionItem>
+          </AboutReplaceSection>
+        </Container>
       </VideoSection>
-      <NavigationBar>
-        <NavigationTitle>SFORE</NavigationTitle>
-      </NavigationBar>
-      <Gutter space={24} />
-      <DownloadButtonContainer />
-      <Container>
-        <Gutter space={24} />
-        <AboutReplaceSection>
-          <AboutReplaceSectionItem>
-            <StyledImage image={Hape5984} />
-          </AboutReplaceSectionItem>
-
-          <AboutReplaceSectionItem>
-            <StyledImage image={Hape7472} />
-          </AboutReplaceSectionItem>
-
-          <AboutReplaceSectionItem>
-            <StyledImage image={Hape7946} />
-          </AboutReplaceSectionItem>
-        </AboutReplaceSection>
-      </Container>
     </Page>
   );
 }
