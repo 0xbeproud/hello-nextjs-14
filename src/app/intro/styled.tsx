@@ -32,41 +32,39 @@ export const NavigationTitle = styled.div`
   color: black;
   font-weight: 900;
   font-size: 80px;
-  margin-left: 20px;
 `;
 
 export const Container = styled.div`
-  ${tw`flex flex-col`}
-
   top: 0;
   left: 0;
-  width: 1200px;
+  width: 200px;
   height: 100vh;
   border-right: 10px solid white;
   border-left: 10px solid white;
-  opacity: 0.4;
 `;
 
 export const VideoBox = styled.video`
-  position: absolute; // 부모(조상) 요소를 기준으로 배치
+  position: fixed; // 부모(조상) 요소를 기준으로 배치
   top: 0;
   left: 0;
-  object-fit: cover;
+  object-fit: contain;
   width: 100%;
   height: 100%;
 
+  z-index: 100;
+
   // dimmed
-  &:after {
-    content: '';
-    position: relative;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: #000;
-    opacity: 0.5;
-    filter: alpha(opacity=80);
-  }
+  //&:after {
+  //  content: '';
+  //  position: relative;
+  //  top: 0;
+  //  right: 0;
+  //  bottom: 0;
+  //  left: 0;
+  //  background: #000;
+  //  opacity: 0.5;
+  //  filter: alpha(opacity=80);
+  //}
 `;
 
 export const HapeSlider = styled.div`
@@ -77,6 +75,7 @@ export const HapeSlider = styled.div`
 export const AboutReplaceSectionItem = styled.div``;
 
 export const StyledImage = styled.div<{ image?: StaticImageData }>`
+  ${tw`sm:w-[160px] sm:h-[160px]`}
   ${props =>
     props.image
       ? css`
@@ -87,12 +86,13 @@ export const StyledImage = styled.div<{ image?: StaticImageData }>`
         `
       : undefined});
 
-  ${tw`h-48`}
+  width: 80px;
+  height: 80px;
 `;
 
 export const StyledSwiperPage = styled(Swiper)`
   position: fixed;
-  top: 160px;
+  top: 120px;
   left: 0;
 
   width: 100%;
@@ -116,21 +116,28 @@ export const SlideContainer = styled.div<{ image?: StaticImageData }>`
 `;
 
 export const SideBar = styled.div`
-  ${tw`flex flex-col justify-start`}
+  ${tw`flex sm:flex-col sm:justify-start sm:items-start`}
+  ${tw`sm:w-[200px] sm:h-full`}
 
-  width: 440px;
-  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+
+  width: 100%;
+  height: 100px;
   background: white;
+  padding: 0 20px;
 
   position: fixed; // viewport 기준
   top: 0;
   right: 0;
-  opacity: 0.9; // logan: 왜 title도 opacity가 적용되는지?
+  //opacity: 0.9; // logan: 왜 title도 opacity가 적용되는지?
   z-index: 3;
 `;
 
 export const SideBarTitle = styled.div`
   color: black;
   font-weight: 900;
-  font-size: 80px;
+  font-size: 30px;
 `;

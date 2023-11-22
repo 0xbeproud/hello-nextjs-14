@@ -19,9 +19,9 @@ import DownloadButton from '@/app/intro/components/DownloadButton/page';
 import Script from 'next/script';
 import {
   Container,
-  NavigationTitle,
   Page,
   SideBar,
+  SideBarTitle,
   StyledImage,
   StyledSwiperPage,
   StyledSwiperSlide,
@@ -43,7 +43,7 @@ function Intro() {
         {/*  <NavigationTitle>I'''''''Iape</NavigationTitle> */}
         {/* </NavigationBar> */}
         <SideBar>
-          <NavigationTitle>I'''''''Iape</NavigationTitle>
+          <SideBarTitle>I'''''''Iape</SideBarTitle>
           <DownloadButton />
         </SideBar>
         <VideoBox playsInline autoPlay muted loop controls>
@@ -57,8 +57,8 @@ function Intro() {
           modules={[Pagination, Mousewheel, Autoplay, EffectFade]}
           direction="horizontal"
           speed={700}
-          slidesPerView={10}
-          spaceBetween={30}
+          slidesPerView={4}
+          spaceBetween={10}
           centeredSlides
           loop
           // effect={'fade'}

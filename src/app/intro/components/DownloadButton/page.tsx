@@ -17,13 +17,15 @@ function DownloadButton(props: Props) {
         window.console.log('willInvokeApp');
         if (isDesktop) {
           window.open('https://sfore.store/r');
+        } else {
+          window.open('https://sfore.store/r');
         }
       }, // function for logging
       onAppMissing() {
         window.console.log('onAppMissing');
-        // if (isDesktop) {
-        //   window.open('https://sfore.store/r');
-        // }
+        if (isDesktop) {
+          window.open('https://sfore.store/r');
+        }
         // window.open('itms-apps://itunes.apple.com/app/id362057947');
       }, // fallback function (default. move to appstore)
       onUnsupportedEnvironment() {},
